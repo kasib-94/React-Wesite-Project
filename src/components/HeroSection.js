@@ -2,15 +2,16 @@ import React from "react";
 import './HeroSection.css';
 import {Button} from "./Button";
 import '../App.css';
+import video from "../videos/vid2.mp4"
 
 
 function HeroSection() {
     return (
         <div className="hero-container">
-            <video src='/vid1.mp4' type="video/mp4" autoPlay loop muted />
+            <video  src={video} autoPlay loop muted />
             <h1>ADVENTURE AWAITS</h1>
             <p>What are you waiting for ?</p>
-            <div className="hero-btns"></div>
+            <div className="hero-btns">
             <Button
                 className='btns'
                 buttonStyle='btn--outline'
@@ -25,6 +26,7 @@ function HeroSection() {
             >
                 WATCH TRAILER <i className="far fa-play-circle"></i>
             </Button>
+        </div>
         </div>
 
     )
